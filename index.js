@@ -16,5 +16,5 @@ app.use('/api/auth', require('./routes/auth'));
 
 app.use('/api/customers', require('./routes/customers'))
 
-const Port = process.env.Port || 3000;
+const Port = process.env.PORT;
 app.listen(Port, ()=>console.log(`Server running on port ${Port}`))
